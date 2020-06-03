@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: Install NodeJS
-      uses: action/setup-node@v2-beta
+      uses: action/setup-node@v1-beta
       with:
         node-version: 12
         
@@ -37,6 +37,6 @@ jobs:
     - name: Install Surge
       run: npm install --global surge
     - name: Deploy to Surge
-      run: surge ./build projects1.surge.sh --token $({secrets.SURGE_TOKEN })
+      run: surge ./build projects1.Surge.Sh --token $({secrets.SURGE_TOKEN })
       
     
